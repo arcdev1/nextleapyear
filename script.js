@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		document.getElementById('thisYear').innerText = thisYear
 		document.getElementById('nextLeapYear').innerText = nextLeapYear(thisYear)
 		document.getElementById('isLeapYear').innerText = `${isLeapYear(thisYear) ? ' also a leap year!' : ' not a leap year.'} `
-		document.getElementById('yearToCheck').value = thisYear
+		document.getElementById('yearToCheck').value = thisYear+1
 
 		function checkYear() {		
 			const year =  document.getElementById('yearToCheck').value || thisYear
