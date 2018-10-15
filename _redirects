@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://romantic-benz-33f1e9.netlify.com/* http://nextleapyear.com/:splat 301!
