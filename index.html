@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>When is the next leap year?</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="content" style="display: none;">
+		<p class="answer">
+			The next leap year is <span id="nextLeapYear"></span>.
+		</p>
+		<p>
+			This year (<span id="thisYear"></span>) is<span id="isLeapYear"></span>
+		</p>
+		<div>
+			<h2>Check another Year</h2>
+			Is <input id="yearToCheck" type="number" value=0 min=0 max=9999></input>a leap year<button onclick=checkYear()>?</button>
+			<span id="isLeap"></span>
+		</div>
+		<div>
+			<h2>How to Calculate Leap Years</h2>
+			<p>
+				Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but these
+				centurial years are leap years if they are exactly divisible by 400. For example, the years 1700, 1800, and 1900 were
+				not leap years, but the years 1600 and 2000 were.
+			</p>
+			<p>Learn more about leap years at
+				<a href="https://en.wikipedia.org/wiki/Leap_year">Wikipedia</a>.
+		</div>
+	</div>
+	<script src='script.js'>
+		
+	</script>
+</body>
+
+</html>
