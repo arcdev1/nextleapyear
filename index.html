@@ -57,7 +57,7 @@
 		</p>
 		<div>
 			<h2>Check another Year</h2>
-			Is <input id="yearToCheck" type="number" value=0 min=0 max=9999></input>a leap year<button onclick=checkYear()>?</button>
+			Is <input id="yearToCheck" type="number" value=0 min=0 max=9999 onchange=clearAnswer() />a leap year<button onclick=checkYear()>?</button>
 			<strong id="isLeap"></strong>
 		</div>
 		<div>
@@ -92,6 +92,9 @@
 			document.getElementById('isLeap').innerText = isLeapYear(year)
 				? ' Yes!'
 				: ' No.'
+		}
+		function clearAnswer() {
+			document.getElementById('isLeap').innerText = ''
 		}
 		/*
 				 * Every year that is exactly divisible by four is a leap year,
